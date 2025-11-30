@@ -1,0 +1,2 @@
+[console_scripts]
+seraphina-agi = seraphina_agi.run_agi:main

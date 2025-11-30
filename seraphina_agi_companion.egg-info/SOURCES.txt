@@ -1,0 +1,11 @@
+README.md
+setup.py
+seraphina_agi/__init__.py
+seraphina_agi/advanced_language_engine.py
+seraphina_agi/run_agi.py
+seraphina_agi_companion.egg-info/PKG-INFO
+seraphina_agi_companion.egg-info/SOURCES.txt
+seraphina_agi_companion.egg-info/dependency_links.txt
+seraphina_agi_companion.egg-info/entry_points.txt
+seraphina_agi_companion.egg-info/requires.txt
+seraphina_agi_companion.egg-info/top_level.txt

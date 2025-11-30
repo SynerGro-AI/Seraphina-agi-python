@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: seraphina-agi-companion
+Version: 0.1.0
+Summary: Pure Python AGI Companion for Seraphina - No mining, no wallets
+Author: Seraphina AGI
+Requires-Python: >=3.8
+Requires-Dist: requests
+Requires-Dist: cryptography
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
