@@ -4,6 +4,16 @@ Pure Python AGI companion for Seraphina - no mining, no wallets.
 
 ## Install
 
+### From GitHub (Recommended)
+
+```bash
+pip install git+https://github.com/yourusername/seraphina-agi-python.git
+```
+
+Replace `yourusername` with your GitHub username.
+
+### Local Install
+
 ```bash
 cd seraphina-agi-python
 pip install -e .
