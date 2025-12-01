@@ -8,7 +8,7 @@ setup(
     long_description_content_type="text/markdown",
     author="Seraphina AGI",
     author_email="seraphina@agi.example.com",
-    url="https://github.com/yourusername/seraphina-agi-python",
+    url="https://github.com/SynerGro-AI/Seraphina.AGIv1.0.8",
     packages=find_packages(),
     install_requires=[
         "requests",  # for HTTP
