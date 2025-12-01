@@ -19,7 +19,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "seraphina-agi=seraphina_agi.run_agi:main",
+            "seraphina-agi=seraphina_agi.runner:main",
         ],
     },
     python_requires=">=3.8",

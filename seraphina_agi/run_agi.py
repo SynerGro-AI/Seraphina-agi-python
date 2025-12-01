@@ -7,6 +7,7 @@ import speech_recognition as sr
 import requests
 import hashlib
 from .advanced_language_engine import AdvancedLanguageEngine
+from .linux_octabit_quantum_core import LinuxOctaBitQuantumCore
 
 def speak(text):
     engine = pyttsx3.init()
@@ -66,7 +67,7 @@ def serve(port: int = 8080):
 
 def main():
     parser = argparse.ArgumentParser(description='Seraphina AGI Companion')
-    parser.add_argument('command', choices=['serve', 'process', 'voice'], help='Command to run')
+    parser.add_argument('command', choices=['serve', 'process', 'voice', 'quantum', 'train', 'optimize'], help='Command to run')
     parser.add_argument('--port', type=int, default=8080, help='Port for serve')
     parser.add_argument('--input', help='Input text for process')
     parser.add_argument('--voice', action='store_true', help='Use voice for input/output')
@@ -109,6 +110,17 @@ def main():
             speak(response)
             if args.share:
                 share_data(result)
+    elif args.command == 'quantum':
+        core = LinuxOctaBitQuantumCore()
+        result = core.run()
+        print('[Seraphina AGI] Quantum Core operational result:')
+        print(json.dumps(result, indent=2))
+    elif args.command == 'train':
+        print('AI learning orchestrator not yet implemented in Python version')
+        # TODO: Implement when ai-learning-orchestrator.js is converted
+    elif args.command == 'optimize':
+        print('AGI self-optimizer not yet implemented in Python version')
+        # TODO: Implement when agi-self-optimizer.js is converted
 
 if __name__ == '__main__':
     main()
