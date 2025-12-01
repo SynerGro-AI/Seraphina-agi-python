@@ -27,14 +27,21 @@ Note: The script installs to `%APPDATA%\Python\Python313\Scripts\seraphina-agi.e
 
 ```bash
 seraphina-agi process --input "Hello, world!"
-# Or directly: %APPDATA%\Python\Python313\Scripts\seraphina-agi.exe process --input "Hello, world!"
+# With voice: seraphina-agi process --voice
+# With sharing: seraphina-agi process --input "Hello" --share
+```
+
+### Voice Chat
+
+```bash
+seraphina-agi voice
+# Say "exit" to quit
 ```
 
 ### API
 
 ```bash
 seraphina-agi serve --port 8080
-# Or directly: %APPDATA%\Python\Python313\Scripts\seraphina-agi.exe serve --port 8080
 ```
 
 Then POST to http://localhost:8080/process with JSON {"input": "text"}
@@ -44,3 +51,5 @@ Then POST to http://localhost:8080/process with JSON {"input": "text"}
 - Language processing with encryption
 - HTTP API
 - Pure Python
+- Voice input/output (--voice)
+- Collective learning (--share)

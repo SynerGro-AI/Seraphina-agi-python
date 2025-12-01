@@ -13,6 +13,9 @@ setup(
     install_requires=[
         "requests",  # for HTTP
         "cryptography",  # for crypto
+        "pyttsx3",  # for text-to-speech
+        "speechrecognition",  # for speech recognition
+        "pyaudio",  # for microphone access
     ],
     entry_points={
         "console_scripts": [
